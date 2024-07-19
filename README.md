@@ -9,6 +9,32 @@ The objective of the chatting app project is to develop a highly functional and 
 
 **Real-time Messaging :** Implement a robust messaging system that allows users to exchange text messages instantly, ensuring a smooth and responsive communication experience.
 
+## Features
+**Real-time Chat :**
+  1. Clients can send and receive messages in real-time.
+  2. Messages are displayed with timestamps.
+     
+**Graphical User Interface (GUI) :**
+  1. The application uses Java Swing for creating a user-friendly interface.
+  2. Customizable background, fonts, and colors to mimic WhatsApp's interface.
+     
+**Message Formatting :**
+  Messages are formatted with a sender's name, timestamp, and are color-coded.
+  
+**Send and Receive Media :**
+  Supports sending and receiving media like images (e.g., smiley icons).
+
+**Socket Programming :**
+  1. Utilizes sockets for client-server communication.
+  2. Handles multiple clients through socket connections.
+
+**Custom Buttons :**
+  1. Rounded buttons for sending messages and media.
+  2. Custom icons for various actions like send, call, video call, and more.
+
+**Responsive UI :**
+  The user interface adapts to different screen sizes and resolutions.
+
 ## Project Structure
 The project consists of the following main classes :
 - **Client.java:** Handles the client-side operations.
@@ -42,6 +68,39 @@ The following are some commonly used tools and technologies for developing a cha
 6. **JSON or XML :**  These formats are commonly used for data exchange between the server and client. They enable efficient serialization and deserialization of data.
 
 7. **Graphical User Interface (GUI) :**  Develop an aesthetically pleasing and intuitive GUI using Java Swing components. Design and implement a layout that facilitates easy navigation, message input, and display of conversations.
+
+## Usage
+**Setup :**
+  - Ensure you have Java Development Kit (JDK) installed.
+  - Clone the repository to your local machine.
+
+**Running the Server :**
+  - Navigate to the project directory.
+  - Compile the Server.java file : 
+    - javac Server.java
+  - Run the server :
+    - java Server
+  - The server will start listening for client connections on port 1234.
+    
+**Running the Client :**
+  - Open another terminal or command prompt.
+  - Navigate to the project directory.
+  - Compile the Client.java file :
+    - javac Client.java
+  - Run the client:
+    - java Client
+  - The client will attempt to connect to the server. Ensure the server is running and accessible.
+
+**Using the Application :**
+  - Once the client connects to the server, the chat interface will appear.
+  - Type messages in the text field at the bottom and press the send button (paper plane icon) to send messages.
+  - Messages will appear in the chat area with the sender's name and timestamp.
+  - Use the call and video call buttons for additional functionalities (implementation required).
+  - To close the client, click the back arrow icon at the top left.
+
+**Customization :**
+  - Background images and icons can be changed by replacing the corresponding files in the project directory.
+  - Modify the Color, Font, and layout settings in the Client.java and Server.java files to customize the appearance.
 
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/ab8817af-fbd2-4157-93d3-552dc4752b12)
